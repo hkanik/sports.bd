@@ -12,7 +12,7 @@
 }
 
 .col-4 {
-    width: 33.33%
+    width: 32.33%;
 }
 
 .col-5 {
@@ -36,7 +36,7 @@
 }
 
 .col-10 {
-    width: 83.33%
+    width: 83.33%;
 }
 
 .col-11 {
@@ -44,7 +44,7 @@
 }
 
 .col-12 {
-    width: 100%
+    width: 100%;
 }
 
 [class*='col-'] {
@@ -61,14 +61,26 @@
     padding: 0;
 }
 
+.hr {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    box-sizing: border-box;
+}
+
 .main_container {
+    width: 100%;
     position: relative;
 }
 
 .top_header {
+    position: relative;
     height: 60px;
     background-color: #27282A;
-    border-bottom: 2px solid #333333;
+    /* border-bottom: 2px solid #333333; */
+    width: 100%;
 }
 
 .social_bar {}
@@ -142,8 +154,7 @@
 .main_header {
     background-color: #FFDC11;
     height: 90px;
-    /* position: sticky; */
-    /* top: 40px; */
+    width: 100%;
 }
 
 .header_layer {
@@ -152,7 +163,6 @@
     border-right: 95px solid transparent;
     border-left: 95px solid transparent;
     position: relative;
-
 }
 
 .header_element {}
@@ -172,15 +182,30 @@
 .logo span {
     color: white;
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
     font-family: arial;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-left: 10px;
+}
+
+.logo p {
+
+    color: #FFDC11;
+
+    font-size: 11px;
+
+    font-family: arial;
+
+    letter-spacing: 3px;
+
+    margin-left: 11%;
+
+    line-height: 1.6;
 }
 
 .nav_bar {
     position: absolute;
-    top: 94px;
+    top: 96px;
     left: 46%;
 }
 
@@ -194,11 +219,22 @@
 
 
 .nav_bar ul li a {
+    position: relative;
     text-decoration: none;
     color: white;
     font-family: arial;
     font-size: 15px;
     padding: 35px 20px;
+}
+
+.navLayer {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #27282A;
+    transform: rotate(45deg);
+    top: -11%;
+    left: 37%;
 }
 
 .nav_bar ul li a:hover {
@@ -208,6 +244,7 @@
 }
 
 .content {
+    width: 100%;
     overflow: hidden;
     height: 580px;
     background-image: url(images/cr7c.jpg);
@@ -270,11 +307,6 @@
     font-size: 20px;
 }
 
-.rdm {
-    display: block;
-    margin-left: 3%;
-    margin-top: 50px;
-}
 
 .contentElement a {
     color: #FFDC11;
@@ -288,6 +320,13 @@
     padding: 15px 25px;
 }
 
+.rdm {
+    display: block;
+    margin-top: 80px;
+    text-align: left;
+    margin-left: 3%;
+}
+
 .contentElement a:hover {
     background-color: #FFDC11;
     color: #141415;
@@ -296,6 +335,7 @@
 }
 
 .slider {
+    width: 100%;
     height: 140px;
     border: 2px solid white;
     border-left: none;
@@ -407,19 +447,20 @@
 }
 
 .siteView {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    height: 400px;
 }
 
 .siteStatus {
+    width: 90%;
     height: 400px;
-    padding-left: 4%;
+    padding-left: 3%;
+    margin: 0 auto;
 }
 
 .totalStat {
-    margin-top: 8%;
     float: left;
+    margin-top: 8%;
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0px 0px 15px #e5e4e4;
@@ -472,21 +513,39 @@
 }
 
 .matchTeam {
+    width: 90%;
     margin: 0 auto;
     height: 500px;
-    padding-left: 4%;
 }
 
 .matchFixtures {
-    height: 500px;
-    width: 48%;
+    position: relative;
+    width: 49%;
+    float: left;
+}
+
+.matchFixturesLayer {
+    position: absolute;
+    top: -5%;
+    z-index: -1;
+    height: 10%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #27282A;
+}
+
+.teamRankingsLayer {
+    position: absolute;
+    top: -5%;
+    z-index: -1;
+    height: 10%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #27282A;
 }
 
 .matchFixturesHeading {
-    height: 80px;
-    border: 1px solid;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    height: 65px;
     border-bottom: 5px solid #FFDC11;
     background-color: #27282A;
     color: white;
@@ -495,21 +554,24 @@
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 5px;
+    padding-left: 25px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .matchFixturesHeading h2 {
-    margin-top: 30px;
-    margin-left: 30px;
+    padding-top: 13px;
 }
 
 .sec1 {
-    height: 80px;
+    height: 70px;
     background-color: #F5F5F5;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .sec2 {
-    height: 80px;
+    height: 70px;
     border-right: 2px solid #F5F5F5;
     border-left: 2px solid #F5F5F5;
 }
@@ -537,9 +599,44 @@
     font-size: 15px;
 }
 
-.sec1 h2 {float: left;margin-top: 30px;margin-right: 13px;font-family: arial;}
 
-.sec2 h2 {float: left;margin-top: 30px;margin-right: 13px;font-family: arial;}
+.subSec2 {
+    float: left;
+    width: 32%;
+    padding-left: 6%;
+}
+
+.subSec2 img {
+    margin: 22px 10px;
+    float: left;
+}
+
+.subSec2 span {
+    display: block;
+    padding-top: 15px;
+    font-size: 18px;
+    font-family: oswald;
+}
+
+.subSec2 p {
+    font-family: arial;
+    line-height: 1.2;
+    font-size: 15px;
+}
+
+.sec1 h2 {
+    float: left;
+    margin-top: 30px;
+    margin-right: 13px;
+    font-family: arial;
+}
+
+.sec2 h2 {
+    float: left;
+    margin-top: 30px;
+    margin-right: 13px;
+    font-family: arial;
+}
 
 .secDate {
     float: left;
@@ -553,10 +650,1439 @@
     margin-top: 31px;
 }
 
-.top_header {}
+.teamRankings {
+    position: relative;
+    width: 49%;
+    float: right;
+}
 
-.top_header {}
+.teamRankingsHeading {
+    height: 65px;
+    border-bottom: 5px solid #FFDC11;
+    background-color: #27282A;
+    color: white;
+    font-size: 15px;
+    font-family: Oswald;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-left: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
-.top_header {}
+.teamRankingsHeading h2 {
+    padding-top: 13px;
+}
 
-.top_header {}
+.rankWrap {
+
+    width: 100%;
+}
+
+.rankSec {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+}
+
+.teamRank {
+    width: 100%;
+    height: 70px;
+    background-color: #F5F5F5;
+}
+
+.teamRank h2 {
+    font-family: arial;
+    font-size: 20px;
+    margin-left: 15px;
+    padding-top: 25px;
+}
+
+.sec1_1 {
+    width: 100%;
+    height: 70px;
+    border-left: 2px solid #F5F5F5;
+    box-sizing: border-box;
+}
+
+.sec1_1 span {
+    font-size: 18px;
+    font-family: oswald;
+    padding-top: 10px;
+    display: block;
+}
+
+.sec1_1 img {
+    float: left;
+    margin: 17px 15px;
+}
+
+.sec1_1 h3 {
+    float: left;
+    margin: 18px 11px;
+    font-size: 25px;
+    font-family: arial;
+}
+
+.sec1_1 p {
+    font-size: 15px;
+    font-family: arial;
+}
+
+.sec2_1 {
+    width: 100%;
+    height: 70px;
+    background-color: #F5F5F5;
+}
+
+.sec2_1 span {
+    font-size: 18px;
+    font-family: oswald;
+    padding-top: 10px;
+    display: block;
+}
+
+.sec2_1 img {
+    float: left;
+    margin: 17px 15px;
+}
+
+.sec2_1 h3 {
+    float: left;
+    margin: 18px 11px;
+    font-size: 25px;
+    font-family: arial;
+}
+
+.sec2_1 p {
+    font-size: 15px;
+    font-family: arial;
+}
+
+.rankScore {
+    width: 50%;
+    float: right;
+    border-right: 2px solid #F5F5F5;
+    box-sizing: border-box;
+}
+
+.rankScore table {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.rankScoreTableRow {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-family: arial;
+}
+
+
+.rankScoreTableRow2 {
+    height: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-family: arial;
+}
+
+
+.partnerSlider {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 190px;
+}
+
+.partnerSliderLeftArrow {
+    float: left;
+    width: 5%;
+}
+
+.partnerSliderLeftArrow a {
+    color: #27282A;
+}
+
+.partnerSliderLeftArrow a i {
+    font-size: 45px;
+    margin: 26px 15px;
+}
+
+.partnerSliderContentImageLast {
+    float: left;
+    width: 24%;
+}
+
+.partnerSliderContent {
+    float: left;
+    width: 90%;
+}
+
+.partnerSliderContentImage {
+    float: left;
+    margin-left: 0.2%;
+}
+
+.partnerSliderContentImage a img {}
+
+.partnerSliderRightArrow {
+    width: 5%;
+    float: right;
+}
+
+.partnerSliderRightArrow a {
+    color: #27282A;
+}
+
+.partnerSliderRightArrow a i {
+    font-size: 45px;
+    margin: 26px 15px;
+}
+
+
+.upcommingEvent {
+    height: 500px;
+    background-image: url(images/messi.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.upcommingEventContentLayer {
+
+    background-color: black;
+
+    opacity: .7;
+
+    height: 500px;
+}
+
+.upcommingEventContent {
+
+    position: absolute;
+
+    top: 7%;
+}
+
+.upcommingEventContent h1 {
+    color: white;
+    font-family: Oswald;
+    font-size: 60px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.upcommingEventContent h1 span {
+    color: #FFDC11;
+    font-weight: bold;
+}
+
+.upcommingEventContent p {
+    color: white;
+    font-family: arial;
+    width: 70%;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.rdm1 {
+    display: block;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.upcommingEventContent a {
+    color: #FFDC11;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid #FFDC11;
+    border-radius: 60px;
+    padding: 15px 25px;
+}
+
+.upcommingEventContent a:hover {
+    background-color: #FFDC11;
+    color: #141415;
+    font-weight: bolder;
+    transition: .9s;
+}
+
+
+
+/*
+.matchFixtures {
+    position: relative;
+    width: 49%;
+    float: left;
+}
+
+.matchFixturesLayer {
+    position: absolute;
+    top: -5%;
+    z-index: -1;
+    height: 10%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #27282A;
+}
+
+
+.matchFixturesHeading {
+    height: 65px;
+    border-bottom: 5px solid #FFDC11;
+    background-color: #27282A;
+    color: white;
+    font-size: 15px;
+    font-family: Oswald;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-left: 25px;
+}
+
+.matchFixturesHeading h2 {
+    padding-top: 13px;
+}
+*/
+
+.matchUpdate {
+    position: relative;
+    width: 96%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.nextMatch {
+    position: relative;
+    width: 49%;
+    float: left;
+}
+
+.nextMatchLayer {
+    position: absolute;
+    top: -8%;
+    z-index: -1;
+    height: 17%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #27282A;
+}
+
+.nextMatchsHeading {
+    height: 65px;
+    border-bottom: 5px solid #FFDC11;
+    background-color: #27282A;
+    color: white;
+    font-size: 15px;
+    font-family: Oswald;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-left: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nextMatchsHeading h2 {
+    padding-top: 13px;
+}
+
+.latestResult {
+    position: relative;
+    width: 49%;
+    float: right;
+}
+
+.latestResultLayer {
+    position: absolute;
+    top: -8%;
+    z-index: -1;
+    height: 17%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #27282A;
+}
+
+.latestResultHeading {
+    height: 65px;
+    border-bottom: 5px solid #FFDC11;
+    background-color: #27282A;
+    color: white;
+    font-size: 15px;
+    font-family: Oswald;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-left: 25px;
+}
+
+.latestResultHeading h2 {
+    padding-top: 13px;
+}
+
+.teamSection {
+    width: 100%;
+    height: 150px;
+    border-right: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+.team1 {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.team1 a {}
+
+.team1 a img {}
+
+.team1 p {
+    font-family: arial;
+    font-weight: bold;
+}
+
+.matchTime {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.matchTime h2 {
+    font-family: arial;
+    color: #FFDC11;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.matchTime p {
+    font-size: 20px;
+    font-family: arial;
+    line-height: 1.5;
+}
+
+
+.team2 {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.team2 a {}
+
+.team2 a img {}
+
+.team2 p {
+    font-family: arial;
+    font-weight: bold;
+}
+
+
+.remainingTime {
+    width: 100%;
+    height: 50px;
+    background-color: #F5F5F5;
+    border-right: 1px solid #E9E9E9;
+    border-left: 1px solid #E9E9E9;
+    box-sizing: border-box;
+}
+
+.days {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.days span {
+    display: block;
+    font-size: 18px;
+    font-family: arial;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.days span p {
+
+    display: inline;
+
+    color: #999BA0;
+}
+
+.hours {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.hours span {
+    display: block;
+    font-size: 18px;
+    font-family: arial;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.hours span p {
+    display: inline;
+    color: #999BA0;
+}
+
+.minute {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.minute span {
+    display: block;
+    font-size: 18px;
+    font-family: arial;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.minute span p {
+    display: inline;
+    color: #999BA0;
+}
+
+.second {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.second span {
+    display: block;
+    font-size: 18px;
+    font-family: arial;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.second span p {
+    display: inline;
+    color: #999BA0;
+}
+
+
+.ticketBooking {
+    width: 100%;
+    height: 55px;
+    background-color: #FFDC11;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ticketBooking a {
+    color: #555555;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.ticketBooking a span {
+    display: block;
+    padding-top: 3%;
+}
+
+
+.winTeam {
+    width: 33%;
+    float: left;
+    border-left: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    text-align: center;
+    height: 255px;
+    background-color: #FCFCFC;
+    padding-top: 7%;
+}
+
+.winTeam span {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+    color: #555555;
+    display: block;
+    line-height: 1.7;
+}
+
+.winTeam img {}
+
+.resultDetails {
+    width: 34%;
+    float: left;
+    border-bottom: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    height: 255px;
+    background-color: #FCFCFC;
+    padding-top: 7%;
+}
+
+.resultDetails h1 {
+    text-align: center;
+    display: inline-block;
+    margin: 27px 0px 14px 52px;
+    font-family: arial;
+    font-size: 45px;
+}
+
+.resultDetails p {
+    font-size: 16px;
+    font-family: arial;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0px 0px 0px 32px;
+}
+
+.lossTeam {
+    background-color: #FCFCFC;
+    width: 33%;
+    float: left;
+    border-right: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    height: 255px;
+    padding-top: 7%;
+    text-align: center;
+}
+
+.lossTeam span {
+    color: #555555;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+    display: block;
+    line-height: 1.7;
+}
+
+.resultDetailsShpae {
+    height: 170px;
+    width: 170px;
+    background: url(images/transparent-pattren.png);
+    background-color: #4d4d4d;
+    color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.latestNewsSection {
+    margin: 0 auto;
+    position: relative;
+    height: 800px;
+}
+
+.latestNews {
+    position: relative;
+    text-align: center;
+    height: 100px;
+}
+
+.latestNews h1 {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: oswald;
+    letter-spacing: 5px;
+}
+
+.latestNews h1::before {
+    background-color: #FFDC11;
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: -10px;
+    width: 3px;
+    height: 35px;
+}
+
+.latestNews h1::after {
+    background-color: #FFDC11;
+    content: '';
+    position: absolute;
+    left: -23px;
+    bottom: -3px;
+    width: 40px;
+    height: 3px;
+}
+
+.newsWrapper {}
+
+.newsBodyWrap {
+    height: 300px;
+    width: 90.59%;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+}
+
+.news1 {
+    float: left;
+}
+
+.newsLayer {}
+
+.newsImage {
+    margin-left: 4.7%;
+}
+
+.newsImage a {
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.newsImagehover:hover + .newsLayer {}
+
+.newsImage a img {
+    border-bottom: 5px solid #FFDC11;
+}
+
+.authorDate {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.authorDate span {
+    font-family: arial;
+    margin-left: 5px;
+}
+
+.authorDate i {
+    color: #8A8D8F;
+}
+
+.authorDate a {
+    text-decoration: none;
+    color: #333E3E;
+}
+
+.authorDate a span {
+    margin-right: 5%;
+}
+
+.newsBody {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.newsBody h1 {
+    font-family: oswald;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.newsBody p {
+    font-family: arial;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.newsBody span {
+    display: block;
+}
+
+.newsBody span a {
+    color: #27282A;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid #FFDC11;
+    border-radius: 60px;
+    padding: 10px 15px;
+}
+
+.newsBody span a:hover {
+    color: #d64e0e;
+    border: 2px solid #27282A;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+
+
+
+.profileSection {
+    width: 100%;
+    position: relative;
+    background-image: url(images/neymar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.profileSectionLayer {
+    width: 100%;
+    background-color: black;
+    height: 500px;
+    opacity: .83;
+}
+
+.profileSectionLayer2 {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: #3B3B3B;
+    height: 500px;
+    opacity: 0.6;
+}
+
+.profileSectionContentWrap {
+
+    width: 94%;
+
+    position: absolute;
+
+    top: 1%;
+
+    left: 3%;
+
+    overflow: hidden;
+}
+
+.proSecLeftArrow {
+    width: 2%;
+    height: 219px;
+    float: left;
+    padding-top: 18%;
+}
+
+.proSecLeftArrow a {}
+
+.proSecLeftArrow a i {
+    color: white;
+    font-size: 50px;
+}
+
+.proSecRightArrow {
+    width: 2%;
+    float: left;
+    padding-top: 18%;
+}
+
+.proSecRightArrow a {}
+
+.proSecRightArrow a i {
+    color: white;
+    font-size: 50px;
+}
+
+.proSecContent {
+    width: 95%;
+    height: 480px;
+    float: left;
+}
+
+.proSecContentLayer {
+    position: absolute;
+    top: 64%;
+    left: 13%;
+    background-color: #4A4A4A;
+    height: 30px;
+    width: 30px;
+    transform: rotate(45deg);
+}
+
+.proSecContentElement {
+    position: relative;
+    width: 33%;
+    float: left;
+    padding-top: 8%;
+}
+
+.profileDescription {
+    background-color: #4A4A4A;
+    opacity: .6;
+    padding: 10%;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 4%;
+    margin-left: 7%;
+}
+
+.profileDescription p {
+    color: white;
+    font-size: 16px;
+    font-family: arial;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+.profilePic {
+    margin-top: 8%;
+    margin-left: 7%;
+    float: left;
+}
+
+.profilePic img {
+    border-radius: 50%;
+}
+
+.porfileName {
+    margin-top: 12%;
+    margin-left: 5%;
+    float: left;
+}
+
+.porfileName span {
+    color: white;
+    font-family: oswald;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.porfileName p {
+    font-size: 15px;
+    color: white;
+    font-family: arial;
+    line-height: 2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.TeamMembers {
+    width: 100%;
+    height: 650px;
+}
+
+.MeetOurTeam {
+    position: relative;
+    text-align: center;
+    height: 110px;
+}
+
+.MeetOurTeam h1 {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: oswald;
+    letter-spacing: 5px;
+}
+
+.MeetOurTeam h1::before {
+    background-color: #FFDC11;
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: -10px;
+    width: 3px;
+    height: 35px;
+}
+
+.MeetOurTeam h1::after {
+    background-color: #FFDC11;
+    content: '';
+    position: absolute;
+    left: -23px;
+    bottom: -3px;
+    width: 40px;
+    height: 3px;
+}
+
+
+.persons {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.persons1 {
+    float: left;
+}
+
+.personsImage {
+    width: 92%;
+    margin: 0 auto;
+    height: 230px;
+}
+
+.personsImage a {
+    display: inline-flex;
+}
+
+.personsImage a img {}
+
+.personsBodyWrap {
+    width: 92%;
+    margin: 0 auto;
+    padding: 6%;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+}
+
+.personsDate {}
+
+.personsDate h2 {
+    font-family: oswald;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.personsDate p {
+    font-family: arial;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.personsDate a {
+    text-decoration: none;
+}
+
+.personsDate a span {
+    background-color: #FFDC11;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: arial;
+    font-weight: bold;
+    color: black;
+}
+
+.personsSocialBar {
+    border-top: 1px solid #ECECEC;
+    padding: 20px;
+    width: 78%;
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    height: 15px;
+}
+
+.personsSocialBar i:hover {
+    color: #FFDC11;
+
+}
+
+.personsSocialBar i {
+    margin-right: 5px;
+    color: #999999;
+    transition: color .3s;
+}
+
+.shop {
+    width: 100%;
+    height: 840px;
+}
+
+.favShop {
+    position: relative;
+    text-align: center;
+    height: 110px;
+}
+
+.favShop h1 {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: oswald;
+    letter-spacing: 5px;
+}
+
+.favShop h1::before {
+    background-color: #FFDC11;
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: -10px;
+    width: 3px;
+    height: 35px;
+}
+
+.favShop h1::after {
+    background-color: #FFDC11;
+    content: '';
+    position: absolute;
+    left: -23px;
+    bottom: -3px;
+    width: 40px;
+    height: 3px;
+}
+
+.shopContent {
+    float: left;
+    width: 25%;
+    height: 640px;
+}
+
+.shopContentWrap {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.shopImage {
+    width: 92%;
+    margin: 0 auto;
+    height: 290px;
+}
+
+.shopImage img {
+    width: 100%;
+}
+
+.shopBody {
+    position: relative;
+    width: 92%;
+    margin: 0 auto;
+    background-color: #27282A;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 350px;
+}
+
+.shopBody a {
+    text-decoration: none;
+}
+
+.shopBody a h2 {
+    font-family: oswald;
+    color: white;
+    font-weight: 100;
+    line-height: 3;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.shopBody span {
+    color: white;
+    font-family: arial;
+}
+
+.shopBody p {
+    font-size: 15px;
+    margin: 25px 0px 45px 0px;
+    color: white;
+    font-family: arial;
+    line-height: 1.3;
+    letter-spacing: 2px;
+}
+
+.delete {
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.addCart {
+    display: inline;
+    font-size: 14px;
+    color: #272D22;
+    background-color: #FFDC11;
+    font-family: arial;
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+
+.shopBodyText {}
+
+.shopBodyLayer {
+    position: absolute;
+    height: 0px;
+    border-right: 263.5px solid transparent;
+    border-top: 33px solid #FFDC11;
+    top: 0%;
+    left: 0%;
+    box-sizing: border-box;
+}
+
+.Contact {
+    width: 100%;
+    height: 500px;
+    background-color: #27282A;
+}
+
+.contactWrap {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.contactDetails {
+    width: 35%;
+    float: left;
+    padding-right: 2%;
+    box-sizing: border-box;
+}
+
+.contlogo {}
+
+.contlogo i {
+    font-size: 50px;
+    color: #FFDC11;
+    float: left;
+}
+
+.contlogo span {
+    color: white;
+    display: inline-block;
+    font-size: 25px;
+    font-family: arial;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+.contlogo p {
+
+    color: #FFDC11;
+
+    font-size: 11px;
+
+    font-family: arial;
+
+    letter-spacing: 3px;
+
+    margin-left: 15.2%;
+
+    line-height: 1.6;
+}
+
+.contLogoP {
+    margin-top: 25px;
+    color: #949999;
+    font-size: 15px;
+    font-family: arial;
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+.contSocial {}
+
+.contSocialBar {
+    padding: 15px 0px 30px 0px;
+}
+
+.contSocialBar a {
+    color: #999999;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color .3s;
+}
+
+.contSocialBar a:hover {
+    color: #FFDC11;
+
+}
+
+.location {
+    width: 100%;
+}
+
+.loc1 {
+    width: 10%;
+    float: left;
+}
+
+.loc2 {
+    width: 90%;
+    float: left;
+}
+
+.loc1 i {
+    color: #999999;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.loc2 span {
+    font-size: 15px;
+    color: #999999;
+    font-family: arial;
+    display: block;
+    margin-bottom: 27px;
+}
+
+.featuredNews {
+    width: 33%;
+    float: left;
+}
+
+.featuredNews h2 {
+    font-size: 25px;
+    font-family: oswald;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.fetNewsWrap {}
+
+.fetNewsWrap h1 {
+    color: #999999;
+    font-family: arial;
+    float: left;
+    margin-right: 25px;
+}
+
+.fetNewsWrap a {
+    text-decoration: none;
+}
+
+.fetNewsWrap span {
+    display: block;
+    color: #999999;
+    font-family: oswald;
+    letter-spacing: 2px;
+}
+
+.fetNewsWrap p {
+    color: #999999;
+    font-family: arial;
+    font-size: 13px;
+    margin: 10px 0px 25px 62px;
+}
+
+
+.flickerPhotos {
+    width: 32%;
+    float: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.flickerPhotos h2 {
+    font-size: 25px;
+    font-family: oswald;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.photos1 {
+    width: 100%;
+    height: 100px;
+}
+
+.photo {
+    float: left;
+    margin-right: 10px;
+}
+
+.photo img {}
+
+.footer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: #FFDC11;
+}
+
+.copyright {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 36px 65px;
+}
+
+.copyright span a {
+    text-decoration: none;
+    color: #27282A;
+}
+
+.copyright span a:hover {
+    font-weight: bold;
+}
+
+.copyright span {
+    color: #2D2826;
+    font-size: 19px;
+    font-family: oswald;
+    letter-spacing: 1px;
+}
+
+.termsAndCondition {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 42px 0px 0px 145px;
+}
+
+.termsAndCondition a {
+    text-decoration: none;
+}
+
+.termsAndCondition span {
+    color: #2D2825;
+    font-size: 18px;
+    font-family: arial;
+    font-weight: bold;
+    padding-right: 30px;
+    border-right: 1px solid black;
+}
+
+.termsAndCondition p {
+
+    color: #2D2826;
+
+    font-size: 18px;
+
+    font-family: arial;
+
+    font-weight: bold;
+
+    display: inline;
+
+    margin-left: 30px;
+}
+
+.footerLayer {
+    position: absolute;
+    top: -35%;
+    left: 47%;
+    height: 70px;
+    width: 70px;
+    transform: rotate(45deg);
+    background-color: #FFDC11;
+}
+
+.footerLayer a {
+    text-decoration: none;
+    color: #27282A;
+}
+
+.footerLayer i {
+    transform: rotate(45deg);
+    font-size: 40px;
+    margin-left: 14px;
+}
