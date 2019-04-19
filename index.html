@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sport.BD - Sports & Magazine</title>
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="style.css">
@@ -14,7 +14,11 @@
 </head>
 
 <body>
-    <div class="main_container col-12">
+    <div class="main_container">
+       
+       
+        <!--Top Header Section-->
+        
         <div class="top_header col-12">
             <div class="social_bar col-6">
                 <ul>
@@ -36,6 +40,11 @@
         </div>
 
         <div class="hr"></div>
+
+       
+       
+        <!--Main Header Section-->
+        
         <div class="main_header col-12">
             <div class="header_layer col-12"></div>
             <div class="header_element col-12">
@@ -57,6 +66,9 @@
             </div>
         </div>
 
+
+        <!-- Content Section-->
+        
         <div class="content col-12">
 
             <div class="contentElement col-12">
@@ -67,11 +79,14 @@
             </div>
         </div>
 
+
+        <!-- Slider Section-->
+        
         <div class="slider col-12">
             <div class="leftArrow">
-                <a href=""><i class="fas fa-angle-left"></i></a>
+                <i onclick="slideLeft()" class="fas fa-angle-left"></i>
             </div>
-            <div class="sliderContent">
+            <div class="sliderContent" id="sld">
                 <div class="block">
                     <div class="date">
                         <span>April 20, 2019</span>
@@ -169,11 +184,13 @@
                 </div>
             </div>
             <div class="rightArrow">
-                <a href=""><i class="fas fa-angle-right"></i></a>
+                <i class="fas fa-angle-right"></i>
             </div>
         </div>
 
 
+        <!-- Site View Section-->
+        
         <div class="siteView col-11">
             <div class="siteStatus col-12">
                 <div class="totalStat col-3">
@@ -420,7 +437,8 @@
             </div>
         </div>
 
-
+        <!--Upcommin Event Section-->
+        
         <div class="upcommingEvent col-12">
             <div class="upcommingEventContentLayer"></div>
             <div class="upcommingEventContent col-12">
@@ -432,7 +450,8 @@
         </div>
 
 
-
+        <!--Match Update Section-->
+        
         <div class="matchUpdate col-11">
             <div class="matchUpdate col-12">
                 <div class="nextMatch col-5">
@@ -951,7 +970,7 @@
         <!--footer section-->
         <div class="footer">
             <div class="footerLayer">
-                <i class="fas fa-caret-left" onclick="topFunction()" id="mybtn" style="cursor: pointer"></i>
+                <i class="fas fa-chevron-left" onclick="topFunction()" id="mybtn" style="cursor: pointer"></i>
 
             </div>
             <div class="copyright">
@@ -968,6 +987,7 @@
 
 
 
+    <script src="js/dist/js/jquery-3.4.0.min.js"></script>
     <script src="script.js"></script>
 </body>
 
